@@ -1,0 +1,4 @@
+- name: run roles
+  hosts: all
+  roles:
+    - role: httpd
