@@ -1,5 +1,9 @@
 - name: run roles
   hosts: all
   remote_user: rgandhi
+  become=True
+  become_method=sudo
+  become_user=root
+  become_ask_pass=False
   roles:
     - role: httpd
